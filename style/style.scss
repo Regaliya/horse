@@ -12,12 +12,12 @@ body {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 10px 50px 10px;
-    
-    background-color: #fff;
-    //position: fixed;
+    // position: fixed;
+    background-color: #ffffff00;
+    padding: 8px 30px;
 
 }
+
 a {
     color: #137000;
     font-size: 20px;
@@ -70,43 +70,47 @@ margin: auto;
     margin: 20px 0;
     width: 40px;
     height: 40px;
-    padding: 10px;
+    //padding: 10px;
 }
 .horse {
     width: 80px;
     height: 80px;
     padding: 10px;
 }
+
 .header {
-    
 
     &__logo {
-        text-align: center;
+        margin: 8px 0;
+        //height: 80px;
+        
 
         &__text {
             font-weight: bold;
-            font-size: 10px;
+            font-size: 12px;
+            line-height: 31px;
             color: #137000;
+            //color: #ffffff;
             text-decoration: none;
-            
+            margin: 0 auto;
         }
-       
+        &__img {
+            display: block;
+            width: 50px;
+            margin: 0 auto;
+        }
     }
 
     &__nav {
         display: flex;
         // flex-wrap: wrap;
         justify-content: space-between;
-        margin: auto 0;
-        
-        
+
 
         &__link {
             display: flex;
             justify-content: space-between;
             list-style-type: none;
-            padding: 10px 0;
-            margin: 0;
 
             & li {
                 display: flex;
@@ -114,9 +118,9 @@ margin: auto;
             }
 
             &__text {
-                line-height: 155%;
-                color: #222222;
                 text-decoration: none;
+                //color: #ffffff;
+                color: #137000;
             }
 
             &__img {
@@ -129,16 +133,13 @@ margin: auto;
         }
 
         &__text {
-            font-size: 20px;
-            line-height: 155%;
             text-decoration: none;
-            color: #222222;
             margin: 0 48px 0 0;
         }
 
         &__button {
-            border: 0 solid #137000;
-            background: #137000;
+            border: 0 solid #086CF9;
+            background: #086CF9;
             border-radius: 4px;
             padding: 12px 24px;
             font-size: 16px;
@@ -152,31 +153,31 @@ margin: auto;
 
         &__hero {
             background: url(../img/header_photo.png);
-            //background-color: rgba(0, 0, 0, 0.54);
+            background-color: rgba(0, 0, 0, 0.54);
             width: 100%;
             height: 739px;
-            padding: 199px 234px 283px;
+            padding: 230px 150px 283px;
             box-sizing: border-box;
 
             &__title {
                 font-weight: bold;
                 font-size: 56px;
                 line-height: 73px;
-                color: #fff;
+                color: #FFFFFF;
                 margin: 0;
 
             }
 
             &__text {
                 font-size: 24px;
-                line-height: 155%;
                 text-align: left;
-                color: #fff;
                 margin: 24px auto 54px;
+                color: #ffffff;
             }
 
             &__button {
-                margin: auto 0 ;
+
+                margin: 0 ;
 
             }
         }
@@ -186,9 +187,8 @@ margin: auto;
         display: flex;
         justify-content: space-between;
         box-sizing: border-box;
-        max-width: 1132px;
         padding: 56px 88px;
-        margin: 0 auto;
+        margin: 0 151px;
         background: #FFFFFF;
         box-shadow: 0px 11px 35px rgba(0, 0, 0, 0.08);
         border-radius: 4px;
@@ -198,36 +198,29 @@ margin: auto;
         &__card {
             display: flex;
             flex-wrap: wrap;
-            max-width: 300px;
-            justify-content: center;
-            
 
 
             &__img {
                 display: block;
-                margin: auto;
-                margin: 0 20px;
+                margin: 0 24px 0 0;
             }
 
             &__number {
                 font-weight: bold;
-                font-size: 56px;
+                font-size: 36px;
                 line-height: 47px;
                 /* identical to box height */
 
-                text-align: center;
 
                 color: #222222;
             }
 
             &__text {
                 display: block;
-                font-family: DM Sans;
-                font-style: normal;
-                font-weight: normal;
-                line-height: 155%;
                 /* identical to box height, or 25px */
-                  color: #137000;
+
+
+                color: #137000;
             }
         }
     }
@@ -269,6 +262,7 @@ margin: auto;
                     display: block;
                     margin: 0 auto;
                     width: 100%;
+                    height: 300px;
                 }
 
                 &__title {
@@ -339,57 +333,96 @@ margin: auto;
 
         }
     }
-    &__aboutass {
-        margin: 128px 144px; 
+    &__testimonial {
+        padding: 144px 128px;
+        //background: #ECF4FF;
 
-            &__title {
+        &__title {
+            font-weight: bold;
+            font-size: 48px;
             line-height: 62px;
             margin: 0;
-            color: #222222;
-            } 
-            &__text {
+            color: #000;
             text-align: center;
-            margin: 24px auto ;
-            max-width: 800px;
+        }
+
+        &__text {
+          
+            margin: 12px auto 42px;
+            text-align: center;
+            width: 500px;
+           
+        }
+        &__info {
+            &__title {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 32px;
+                margin: 0;
+                color: #000;
+                text-align: center;
             }
-            &__cards {
+    
+            &__text {
+              
+                margin: 12px auto 42px;
+                text-align: center;
+                width: 200px;
+               
+            }
+        }
+
+        &__cards {
+            display: flex;
+            justify-content: space-between;
+
+
+            &__card {
+                width: 320px;
+                padding: 30px 24px 38px 15px;
                 display: flex;
-                justify-content: space-between;
                 flex-wrap: wrap;
-                padding: 0px;
-                margin: 48px 0;
-    
-    
-                &__card {
-                    box-sizing: border-box;
-                    width: 25%;
-                    padding: 12px 24px 23px;
-                    background: #FFFFFF;
-                    border-radius: 6px;
-                    margin: 12px 0;
-    
-    
-                    &__item {
-                        display: flex;
-                        justify-content: space-between;
-                        margin: 24px 0 25px;
-    
-                        &__img {
-                            width: 32px;
-                            height: 32px;
-                        }
-    
-                        &__text {
-                            font-size: 16px;
-                            line-height: 155%;
-                            box-sizing: border-box;
-                            padding: 5px 0;
-                            color: #555555;
-                        }
+                justify-content: left;
+                background: #FFFFFF;
+                box-shadow: 0px 13px 45px rgba(0, 0, 0, 0.08);
+                border-radius: 6px;
+
+
+                &__text {
+                    width: 100%;
+                    
+                    margin: 0 0 20px;
+
+                }
+                
+                &__img {
+                    width: 45px;
+                    height: 80px;
+                    margin: 10px;
+                }
+
+                &__item {
+
+                    padding: 10px 0;
+
+                    &__title {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 26px;
+                        color: #222222;
+                        margin: 0 0 8px;
+                    }
+
+                    &__text {
+                        
+                        margin: 0;
+
                     }
                 }
             }
         }
+    }
+    
     &__couese {
         background: #ECF4FF;
         padding: 60px 144px;
