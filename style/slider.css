@@ -78,6 +78,7 @@
 .slider {
     position: relative;
     padding: 0px 64px;
+    width: 70%;
 }
 
 /* расположение стрелок  */
