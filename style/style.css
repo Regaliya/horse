@@ -9,17 +9,6 @@ body {
 
 #menu {
   display: flex;
-  justify-content: space-between;body {
-  margin: 0 auto;
-  max-width: 1600px;
-  background-color: #ffffff;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-}
-
-#menu {
-  display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   background: #172219;
@@ -883,7 +872,7 @@ button {
 }
 
 .main__service {
-  margin: 0 144px 128px;
+  margin: 0 50px 128px;
 }
 .main__service__title {
   line-height: 62px;
